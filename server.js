@@ -1,27 +1,23 @@
 const express = require('express')
-// const app = express()
-// const port = 3000;
+const app = express()
+const port = 3000;
 
-express()
-  .use('/static',express.static('static'))
+app.use('/static',express.static('static'))
 
-  .get('/', onhome)
-  .get('/about', onabout)
-  .get('/login', onlogin)
+app.get('/', (req, res) => {
+  res.send('<h1>Hello client</h1>')
+})
 
-  .listen(8000)
-
-  // .use() voor het gebruik van middleware
-
-
-function onhome(req, res) {
-  res.send('<h1>Hello Client</h1>')
-}
-
-function onabout(req, res) {
+app.get('/about', (req, res) => {
   res.send('<h1>Welcome to about</h1>')
-}
+})
 
-function onlogin(req, res) {
-  res.send('<h1>Here you can login</h1>')
-}
+app.get('/login', (req, res) => {
+  res.send('<h1>Here you can fill in your credetials</h1>')
+})
+
+app.get('*', (req, res) => {
+  res.send('<h1>PAGE NOT FOUND</h1>')
+})
+
+app.listen(port)
