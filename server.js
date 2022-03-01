@@ -22,8 +22,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  res.send('<h1>Welcome to about</h1>')
-})
+  res.render('about');
+});
 
 app.get('/login', (req, res) => {
   res.send('<h1>Here you can fill in your credetials</h1>')
