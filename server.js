@@ -17,7 +17,7 @@ app.get('/login', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-  res.send('<h1>PAGE NOT FOUND</h1>')
+  res.send('<h1>404 PAGE NOT FOUND</h1>')
 })
 
 app.listen(port)
