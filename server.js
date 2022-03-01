@@ -1,5 +1,3 @@
-// import express from 'express';
-// import { engine } from 'express-handlebars';
 const { engine } = require('express-handlebars')
 const express = require('express')
 
@@ -7,22 +5,24 @@ const app = express()
 const port = 3000;
 
 app.engine('hbs', engine({
-
   extname: "hbs",
-
-  defaultLayout: false
-
+  layoutsDir: __dirname + '/views/layouts',
+  partialsDir: __dirname + '/views/partials',
 }));
 
 app.set('view engine', 'hbs');
 app.set('views', './views');
 
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('home', {
+      title: "Home"
+    });
 });
 
 app.get('/about', (req, res) => {
-  res.render('about');
+  res.render('about', {
+    title: "About"
+  });
 });
 
 app.get('/login', (req, res) => {
