@@ -1,12 +1,25 @@
+// import express from 'express';
+// import { engine } from 'express-handlebars';
+const { engine } = require('express-handlebars')
 const express = require('express')
+
 const app = express()
 const port = 3000;
 
-app.use('/static',express.static('static'))
+app.engine('hbs', engine({
+
+  extname: "hbs",
+
+  defaultLayout: false
+
+}));
+
+app.set('view engine', 'hbs');
+app.set('views', './views');
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello client</h1>')
-})
+    res.render('home');
+});
 
 app.get('/about', (req, res) => {
   res.send('<h1>Welcome to about</h1>')
