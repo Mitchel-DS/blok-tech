@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js", 
+    "start": "nodemon server.js",
     "scss": "node-sass --watch scss/app.scss -o static/css --output-style compressed"
   },
   "repository": {
@@ -21,13 +21,11 @@
   "homepage": "https://github.com/Mitchel-DS/blok-tech#readme",
   "dependencies": {
     "camelcase": "^6.3.0",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
     "lodash": "^4.17.21",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
-  },
-  "devDependencies" : {
-    
   }
 }
