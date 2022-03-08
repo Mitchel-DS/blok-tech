@@ -26,15 +26,17 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/about', (req, res) => {
-  res.render('about', {
-    title: "About"
-  });
-});
+// app.get('/about', (req, res) => {
+//   res.render('about', {
+//     title: "About"
+//   });
+// });
 
 app.get('*', (req, res) => {
-  res.send('<h1>404 PAGE NOT FOUND</h1>')
-})
+  res.render('404', {
+    title: "404 - Error"
+  });
+});
 
 app.listen(port)
 
