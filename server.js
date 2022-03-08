@@ -1,8 +1,11 @@
 const { engine } = require('express-handlebars')
 const express = require('express')
+const connectDB = require('./config/db')
 
 const app = express()
 const port = 3000;
+
+connectDB();
 
 app.engine('hbs', engine({
   extname: "hbs",
@@ -35,3 +38,4 @@ app.get('*', (req, res) => {
 })
 
 app.listen(port)
+
