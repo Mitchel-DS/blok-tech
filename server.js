@@ -1,14 +1,14 @@
-const { engine } = require('express-handlebars')
-const express = require('express')
-// const connectDB = require('./config/db')
+const { engine } = require('express-handlebars');
+const express = require('express');
 
-require('dotenv').config()
-console.log(process.env)
+const connectDB = require('./config/db');
 
-const app = express()
+require('dotenv').config();
+
+const app = express();
 const port = 3000;
 
-// connectDB();
+connectDB();
 
 app.engine('hbs', engine({
   extname: "hbs",
