@@ -32,10 +32,6 @@ app.get('/about', (req, res) => {
   });
 });
 
-app.get('/login', (req, res) => {
-  res.send('<h1>Here you can fill in your credetials</h1>')
-})
-
 app.get('*', (req, res) => {
   res.send('<h1>404 PAGE NOT FOUND</h1>')
 })
