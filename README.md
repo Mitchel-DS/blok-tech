@@ -14,6 +14,7 @@ Voor een correcte installatie, zijn de volgende packages nodig;
 - express-handlebars (ik weet niet zeker of normale handlebars ook geschikt is, maar dit is de versie dit ik ook gebruikt heb.)
 - nodemon
 - dotenv
+- mongoose (for mongodb)
 
 ## License
 Licensed met: MIT license</a>. 
