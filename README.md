@@ -9,16 +9,18 @@ Tijdens dit project werk ik 1 feature zo veel mogelijk uit. Deze feature is het 
 ## Installaton guide
 Voor een correcte installatie, zijn de volgende packages nodig;
 
-```
- 
-```
-
 - Node.js
 - Express
 - express-handlebars (ik weet niet zeker of normale handlebars ook geschikt is, maar dit is de versie dit ik ook gebruikt heb.)
 - nodemon
 - dotenv
 - mongoose (for mongodb)
+
+Clone de repository naar je lokale machine door het volgende in je terminal te schrijven:
+
+```
+git clone git@github.com:Mitchel-DS/blok-tech.git
+```
 
 ## License
 Licensed met: MIT license</a>. 
