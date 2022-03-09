@@ -1,8 +1,6 @@
 # blok-tech
 Hallo, hier de introductie tot mijn concept voor Project: Tech.
 
-> dit is ff een test
-
 ## Concept + feature
 Gamerge, is een matching applicatie die gamers met elkaar merged, om vrienden te maken of gewoon samen brengt om elkaar te helpen. Op basis van specifieke informatie kan de gebruiker inzien of de match bij de gebruiker past.
 
@@ -10,6 +8,10 @@ Tijdens dit project werk ik 1 feature zo veel mogelijk uit. Deze feature is het 
 
 ## Installaton guide
 Voor een correcte installatie, zijn de volgende packages nodig;
+
+```
+ 
+```
 
 - Node.js
 - Express
