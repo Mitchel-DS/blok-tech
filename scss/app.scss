@@ -23,10 +23,24 @@ main {
 }
 
 main.home {
+    section {
+        h2 {
+            text-align: center;
+            color: $primary-color;
+        }
+    }
+
     section.posts {
         background-color: $primary-color;
         border-radius: 10px;
         padding: 10px;
         margin: 10px;
+        display: flex;
+
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
     }
 }

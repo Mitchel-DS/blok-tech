@@ -29,6 +29,12 @@ app.get('/profile', (req, res) => {
   });
 });
 
+app.get('/post', (req, res) => {
+  res.render('post', {
+    title: "Post"
+  });
+});
+
 app.get('*', (req, res) => {
   res.render('404', {
     title: "404 - Error"
