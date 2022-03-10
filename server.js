@@ -23,11 +23,11 @@ app.get('/', (req, res) => {
     });
 });
 
-// app.get('/about', (req, res) => {
-//   res.render('about', {
-//     title: "About"
-//   });
-// });
+app.get('/profile', (req, res) => {
+  res.render('profile', {
+    title: "Profile"
+  });
+});
 
 app.get('*', (req, res) => {
   res.render('404', {
