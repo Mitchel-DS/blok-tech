@@ -20,6 +20,7 @@ app.set('views', './views');
 app.use('/static', express.static("static"));
 
 
+
 app.get('/', (req, res) => {
     res.render('home', {
       title: "Home"
