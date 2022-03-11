@@ -18,6 +18,7 @@ app.engine('hbs', engine({
 app.set('view engine', 'hbs');
 app.set('views', './views');
 app.use('/static', express.static("static"));
+app.use(bodyParser.urlencoded({ extended: false}))
 
 
 
