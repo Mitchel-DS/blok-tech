@@ -1,19 +1,20 @@
 <main class="post">
     <section>
-        <form action="">
+        <h2>Create a post</h2>
+        <form action="" method="post">
             <label for=""></label>
-            <input type="text" name="text" placeholder="First Name">
-
-            <label for=""></label>
-            <input type="text" name="" placeholder="Last Name">
+            <input type="text" name="firstname" placeholder="First Name" required>
 
             <label for=""></label>
-            <input type="text" name="" placeholder="Type your post here..">
+            <input type="text" name="lastname" placeholder="Last Name" required>
 
             <label for=""></label>
-            <input type="text" name="" placeholder="Which game?">
+            <input type="text" name="description" placeholder="Type your post here.." required>
 
+            <label for=""></label>
+            <input type="text" name="game" placeholder="Which game?" required>
 
+            <input type="submit" value="Post">
         </form>
     </section>
 </main>
