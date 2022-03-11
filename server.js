@@ -1,10 +1,12 @@
-const { engine } = require('express-handlebars');
 const express = require('express');
-const connectDB = require('./config/db');
+const { engine } = require('express-handlebars');
 const app = express();
-const port = 3000;
+const bodyParser = require('body-parser');
+const connectDB = require('./config/db');
+const port = process.env.PORT || 3000;
 
 require('dotenv').config();
+
 connectDB();
 
 app.engine('hbs', engine({
@@ -16,6 +18,7 @@ app.engine('hbs', engine({
 app.set('view engine', 'hbs');
 app.set('views', './views');
 app.use('/static', express.static("static"));
+
 
 app.get('/', (req, res) => {
     res.render('home', {
@@ -37,7 +40,7 @@ app.get('/post', (req, res) => {
 
 app.get('*', (req, res) => {
   res.render('404', {
-    title: "404 - Error"
+    title: "404 - Page not found"
   });
 });
 
