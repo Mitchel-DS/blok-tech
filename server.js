@@ -4,6 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 const port = process.env.PORT || 3000;
+const Post = require('./models/Post');
 
 require('dotenv').config();
 
@@ -19,8 +20,6 @@ app.set('view engine', 'hbs');
 app.set('views', './views');
 app.use('/static', express.static("static"));
 app.use(bodyParser.urlencoded({ extended: false}))
-
-
 
 app.get('/', (req, res) => {
     res.render('home', {
@@ -45,6 +44,10 @@ app.get('*', (req, res) => {
     title: "404 - Page not found"
   });
 });
+
+app.post('/post', (req, res) => {
+  console.log(req.body);
+})
 
 app.listen(port)
 
