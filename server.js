@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 const port = process.env.PORT || 3000;
-const Post = require('./models/Post');
+const userPost = require('./models/UserPost');
 
 require('dotenv').config();
 
@@ -33,9 +33,9 @@ app.get('/profile', (req, res) => {
   });
 });
 
-app.get('/post', (req, res) => {
-  res.render('post', {
-    title: "Post"
+app.get('/userpost', (req, res) => {
+  res.render('userpost', {
+    title: "User Post"
   });
 });
 
@@ -45,7 +45,7 @@ app.get('*', (req, res) => {
   });
 });
 
-app.post('/post', (req, res) => {
+app.post('/userpost', (req, res) => {
   console.log(req.body);
 })
 
