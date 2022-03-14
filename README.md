@@ -2,7 +2,7 @@
 Hallo, hier de introductie tot mijn concept voor Project: Tech.
 
 ## Live Demo
-Link naar live demo [Hier](https://github.com/Mitchel-DS/blok-tech)
+Link naar live demo(not working yet) [Hier](https://github.com/Mitchel-DS/blok-tech)
 
 ## Concept
 Gamerge, is een matching applicatie die gamers met elkaar merged, om vrienden te maken of gewoon samen brengt om elkaar te helpen. Op basis van specifieke informatie kan de gebruiker inzien of de match bij de gebruiker past.
