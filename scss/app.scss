@@ -44,3 +44,23 @@ main.home {
         }
     }
 }
+
+main.post {
+    section {
+        background-color: $primary-color;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+
+        input {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
