@@ -10,7 +10,7 @@ Gamerge, is een matching applicatie die gamers met elkaar merged, om vrienden te
 ## Feature
 Tijdens dit project werk ik 1 feature zo veel mogelijk uit. Deze feature is het posten en in contact komen met elkaar. Dit wil ik gaan doen door middel van het plaatsen van een post - waar je op kan reageren, zo kunnen gebruikers zelf kiezen op welke reactie er gereageert wordt! :smile:
 
-## Installaton guide
+## Installation guide
 Voor een correcte installatie, zijn de volgende packages nodig;
 
 - Node.js
