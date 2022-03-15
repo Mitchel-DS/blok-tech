@@ -6,15 +6,15 @@ const userPostSchema = new mongoose.Schema({
     },
     lastname:{
         type:String,
-        required:true
+        required:true,
     },
     description:{
         type:String,
-        required:true
+        required:true,
     },
     game:{
         type:String,
-        required:false
+        required:false,
     }
 })
 const UserPost = mongoose.model('UserPost', userPostSchema);

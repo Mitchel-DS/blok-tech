@@ -22,9 +22,12 @@ app.use('/static', express.static("static"));
 app.use(bodyParser.urlencoded({ extended: false}))
 
 app.get('/', (req, res) => {
+  UserPost.find().lean().then(userposts => {
     res.render('home', {
-      title: "Home"
-    });
+      title: "Test",
+      userposts:userposts,
+    })
+  })
 });
 
 app.get('/profile', (req, res) => {
