@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 const port = process.env.PORT || 3000;
-const userPost = require('./models/UserPost');
+const UserPost = require('./models/UserPost');
 
 require('dotenv').config();
 
@@ -47,6 +47,9 @@ app.get('*', (req, res) => {
 
 app.post('/userpost', (req, res) => {
   console.log(req.body);
+  const userpost = new UserPost(req.body);
+  userpost.save();
+  res.render('home');
 })
 
 app.listen(port)
