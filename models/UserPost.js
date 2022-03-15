@@ -17,6 +17,5 @@ const userPostSchema = new mongoose.Schema({
         required:false
     }
 })
-
 const UserPost = mongoose.model('UserPost', userPostSchema);
 module.exports = UserPost;
