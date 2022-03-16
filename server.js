@@ -52,7 +52,7 @@ app.post('/userpost', (req, res) => {
   console.log(req.body);
   const userpost = new UserPost(req.body);
   userpost.save();
-  res.render('home');
+  res.redirect('/');
 })
 
 app.listen(port)
