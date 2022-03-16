@@ -19,17 +19,28 @@ git clone git@github.com:Mitchel-DS/blok-tech.git
 ```
 
 ### Packages :file_folder:
-Voor een correcte installatie, moeten de volgende [packages](/package.json) worden geinstalleerd;
+Voor een correcte installatie, moeten de volgende [packages](/package.json) worden geinstalleerd.
 
 Dit kun je doen met:
 
 ```
-npm install <package name here>
+npm install <package naam>
 ```
 
 ### .env file :closed_lock_with_key:
+Als gebruiker moet er zelf een .env file aangemaakt worden in de root. Deze moet je ook gelijk in je .gitignore zetten als je van plan bent deze bestanden naar een eigen repository te sturen. In de .env file moeten de volgende regels meegegeven worden:
+
+```
+PORT=<PORT NUMMER>
+CONNECTION_STRING =<DATABASE CONNECTION STRING>
+
+```
 
 ### Run applicatie :man_dancing:
+Tot slot kun je de applicatie gaan runnen door het volgende in je terminal te typen:
+```
+npm start
+```
 
 ## Bronnen :bookmark_tabs:
 
