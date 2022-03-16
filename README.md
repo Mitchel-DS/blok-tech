@@ -24,7 +24,7 @@ Voor een correcte installatie, moeten de volgende [packages](/package.json) word
 Dit kun je doen met:
 
 ```
-npm install <package naam>
+npm install <PACKAGE NAAM>
 ```
 
 ### .env file :closed_lock_with_key:
@@ -33,7 +33,6 @@ Als gebruiker moet er zelf een .env file aangemaakt worden in de root. Deze moet
 ```
 PORT=<PORT NUMMER>
 CONNECTION_STRING =<DATABASE CONNECTION STRING>
-
 ```
 
 ### Run applicatie :man_dancing:
@@ -43,6 +42,10 @@ npm start
 ```
 
 ## Bronnen :bookmark_tabs:
+Bronnen die zijn gebruikt tijdens het maken van dit project:
+* https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose
+* https://mongoosejs.com/docs/models.html
+* https://handlebarsjs.com/guide/block-helpers.html
 
 ## License :globe_with_meridians:
 Licensed met: MIT license</a>. 
