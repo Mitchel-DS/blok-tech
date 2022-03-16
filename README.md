@@ -1,7 +1,7 @@
 # blok-tech
 Hallo, hier de introductie tot mijn concept voor Project: Tech.
 
-## Live Demo
+## Live Demo :zap:
 Link naar live demo(not working yet) [Hier](https://github.com/Mitchel-DS/blok-tech)
 
 ## Het Concept - GaMerge :new_moon_with_face:
@@ -18,7 +18,7 @@ Clone de repository naar je lokale machine door het volgende in je terminal te t
 git clone git@github.com:Mitchel-DS/blok-tech.git
 ```
 
-### Packages
+### Packages :file_folder:
 Voor een correcte installatie, zijn de volgende packages nodig;
 
 * Node.js
@@ -28,11 +28,11 @@ Voor een correcte installatie, zijn de volgende packages nodig;
 * dotenv
 * mongoose (for mongodb)*
 
-### .env file
+### .env file :closed_lock_with_key:
 
-### Application runnen
+### Run applicatie :man_dancing:
 
-## Bronnen
+## Bronnen :bookmark_tabs:
 
-## License
+## License :globe_with_meridians:
 Licensed met: MIT license</a>. 
