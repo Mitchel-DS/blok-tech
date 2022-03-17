@@ -60,10 +60,10 @@ app.get('*', (req, res) => {
   });
 });
 
-app.post('/userpost', (req, res) => {
+app.post('/userpost', async (req, res) => {
   console.log(req.body); // om te checken of de data wordt opgehaald uit de form
   // er wordt een new model aangemaakt met de data uit de body
-  const userpost = new UserPost(req.body);
+  const userpost = await new UserPost(req.body);
   // .save() slaat de data op in het database
   userpost.save();
   // met een redirect naar de root als het gelukt is
