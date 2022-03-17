@@ -10,7 +10,7 @@ const connectDB  = () => {
             useUnifiedTopology: true
         });
         // console log voor als het gelukt is
-        console.log('DB - CONNECTED')
+        console.log('DATABASE CONNECTION SUCCESFUL~!')
     } catch (err) {
         // comsole log voor de error als het niet gelukt is
         console.log('error occurred while try to connect to db:', err)
