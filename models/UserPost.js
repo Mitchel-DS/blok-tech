@@ -19,7 +19,7 @@ const userPostSchema = new mongoose.Schema({
         type:String,
         required:false,
     }
-})
+});
 
 // schema wordt in een variable gezet 
 const UserPost = mongoose.model('UserPost', userPostSchema);
