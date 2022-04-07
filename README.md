@@ -9,7 +9,7 @@ Link naar live demo (not working yet)
 Gamerge, is een matching applicatie die gamers met elkaar merged, om vrienden te maken of gewoon samen brengt om elkaar te helpen. Gebruikers kunnen posts van andere gebruikers in zien en zelf bepalen op welke gereageerd wordt om te matchen.
 
 ## De Feature :calling:
-Tijdens dit project werk ik 1 feature zo veel mogelijk uit. De Job Story die ik hierbij uitwerk is: '* Wanneer ik hulp nodig hebt met een game, wil ik een post op de feed kunnen plaatsen, zodat ik kan aangeven waar ik naar op zoek ben en andere gebruikers hierop kunnen reageren.' Deze feature is het posten van een bericht op de feed en een lijst met alle posts kunnen inzien. :smile:
+Tijdens dit project werk ik 1 feature zo veel mogelijk uit. De Job Story die ik hierbij uitwerk is: 'Wanneer ik hulp nodig hebt met een game, wil ik een post op de feed kunnen plaatsen, zodat ik kan aangeven waar ik naar op zoek ben en andere gebruikers hierop kunnen reageren.' Deze feature is het posten van een bericht op de feed en een lijst met alle posts kunnen inzien. :smile:
 
 ## Installation guide :electric_plug:
 ### Clone link
@@ -25,7 +25,7 @@ Voor een correcte installatie, moeten de volgende [packages](/package.json) word
 Dit kun je doen met:
 
 ```
-npm install <PACKAGE NAAM>
+npm install
 ```
 
 ### .env file :closed_lock_with_key:
@@ -33,7 +33,7 @@ Als gebruiker moet er zelf een .env file aangemaakt worden in de root. Deze moet
 
 ```
 PORT=<PORT NUMMER>
-CONNECTION_STRING =<DATABASE CONNECTION STRING>
+CONNECTION_STRING=<DATABASE CONNECTION STRING>
 ```
 
 ### Run applicatie :man_dancing:
@@ -49,4 +49,4 @@ Bronnen die zijn gebruikt tijdens het maken van dit project:
 * https://handlebarsjs.com/guide/block-helpers.html
 
 ## License :globe_with_meridians:
-Licensed met: MIT license</a>. 
+Licensed met: [MIT license](/LICENSE.md) 
