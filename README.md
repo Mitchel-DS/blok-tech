@@ -47,6 +47,7 @@ Bronnen die zijn gebruikt tijdens het maken van dit project:
 * https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose
 * https://mongoosejs.com/docs/models.html
 * https://handlebarsjs.com/guide/block-helpers.html
+* https://www.youtube.com/watch?v=qhuFviJn-es&t=277s
 
 ## License :globe_with_meridians:
 Licensed met: [MIT license](/LICENSE.md) 
