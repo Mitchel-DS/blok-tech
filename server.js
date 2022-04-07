@@ -1,39 +1,31 @@
-// alle requires modules
+// express setup
 const express = require('express');
-const { engine } = require('express-handlebars');
-const bodyParser = require('body-parser');
-const connectDB = require('./config/db');
-const UserPost = require('./models/UserPost');
-
-// connectie met de port via .env of hard code
+const app = express();
 const port = process.env.PORT || 3000;
 
-// app variable met express function erin
-const app = express();
+const { engine } = require('express-handlebars');
+const bodyParser = require('body-parser');
+
+const connectDB = require('./config/db');
+
+const UserPost = require('./models/UserPost');
 
 require('dotenv').config();
-
-// hier wordt de connectDB() functie aangeroepen
 connectDB();
 
-// handlebars configuratie, extention, layout en partials locatie
+app.set('view engine', 'hbs');
+app.set('views', './views');
+
 app.engine('hbs', engine({
   extname: "hbs",
   layoutsDir: __dirname + '/views/layouts',
   partialsDir: __dirname + '/views/partials',
 }));
 
-app.set('view engine', 'hbs');
-app.set('views', './views');
-
-// static folder word hier aangeroepen
 app.use('/static', express.static("static"));
 app.use(bodyParser.urlencoded({ extended: false}))
 
 app.get('/', (req, res) => {
-  // bij het laden van de root wordt er met .find() alle data opgehaald uit het database en in de parameter 'userposts' gedaan
-  // .lean() wordt gebruikt om het object kleiner te maken, zodat het minder zwaar is om in te laden
-  // .then() om er voor te zorgen dat eerst de .find() en .lean() wordt uitgevoerd EN DAN de rest
   UserPost.find().lean().then(userposts => {
     res.render('home', {
       title: "Test",
