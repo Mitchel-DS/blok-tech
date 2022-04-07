@@ -18,5 +18,5 @@ const connectDB  = () => {
     }
 };
 
-// exporteerd de connectDB functie, zodat het aangeroepen kan worden in een ander bestand
-module.exports = connectDB;
+// exporteert de connectDB functie, zodat het aangeroepen kan worden in een ander bestand
+module.exports = connectDB;  
