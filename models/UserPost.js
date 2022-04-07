@@ -1,5 +1,5 @@
 // require mongoose for model implementation
-const mongoose  = require("mongoose");
+const mongoose  = require('mongoose');
 
 // hier wordt een nieuwe mongoose schema aangemaakt met de bijbehorende datatypes
 const userPostSchema = new mongoose.Schema({

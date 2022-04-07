@@ -23,15 +23,15 @@ app.engine('hbs', engine({
 }));
 
 app.use('/static', express.static('static'));
-app.use(bodyParser.urlencoded({ extended: false}))
+app.use(bodyParser.urlencoded({ extended: false}));
 
 app.get('/', (req, res) => {
   UserPost.find().lean().then(userposts => {
     res.render('home', {
       title: 'Test',
       userposts:userposts,
-    })
-  })
+    });
+  });
 });
 
 app.get('/profile', (req, res) => {
@@ -60,8 +60,8 @@ app.post('/userpost', async (req, res) => {
   userpost.save();
   // met een redirect naar de root als het gelukt is
   res.redirect('/');
-})
+});
 
 // connectie met de port 
-app.listen(port)
+app.listen(port);
 
