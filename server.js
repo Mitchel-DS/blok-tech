@@ -17,18 +17,18 @@ app.set('view engine', 'hbs');
 app.set('views', './views');
 
 app.engine('hbs', engine({
-  extname: "hbs",
+  extname: 'hbs',
   layoutsDir: __dirname + '/views/layouts',
   partialsDir: __dirname + '/views/partials',
 }));
 
-app.use('/static', express.static("static"));
+app.use('/static', express.static('static'));
 app.use(bodyParser.urlencoded({ extended: false}))
 
 app.get('/', (req, res) => {
   UserPost.find().lean().then(userposts => {
     res.render('home', {
-      title: "Test",
+      title: 'Test',
       userposts:userposts,
     })
   })
@@ -36,19 +36,19 @@ app.get('/', (req, res) => {
 
 app.get('/profile', (req, res) => {
   res.render('profile', {
-    title: "Profile"
+    title: 'Profile'
   });
 });
 
 app.get('/userpost', (req, res) => {
   res.render('userpost', {
-    title: "User Post"
+    title: 'User Post'
   });
 });
 
 app.get('*', (req, res) => {
   res.render('404', {
-    title: "404 - Page not found"
+    title: '404 - Page not found'
   });
 });
 
