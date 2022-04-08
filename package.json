@@ -1,36 +1,36 @@
 {
-  "name": "blok-tech",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "nodemon server.js",
-    "lint": "eslint ./",
-    "scss": "node-sass --watch scss/app.scss -o static/css --output-style compressed"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mitchel-DS/blok-tech.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Mitchel-DS/blok-tech/issues"
-  },
-  "homepage": "https://github.com/Mitchel-DS/blok-tech#readme",
-  "dependencies": {
-    "body-parser": "^1.19.2",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.2",
-    "express-handlebars": "^6.0.2",
-    "mongoose": "^6.2.4",
-    "node-sass": "^7.0.1"
-  },
-  "devDependencies": {
-    "eslint": "^8.12.0",
-    "nodemon": "^2.0.15"
-  }
+	"name": "blok-tech",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"dev": "nodemon server.js",
+		"lint": "eslint ./",
+		"scss": "node-sass --watch scss/app.scss -o static/css --output-style compressed"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mitchel-DS/blok-tech.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Mitchel-DS/blok-tech/issues"
+	},
+	"homepage": "https://github.com/Mitchel-DS/blok-tech#readme",
+	"dependencies": {
+		"body-parser": "^1.19.2",
+		"dotenv": "^16.0.0",
+		"express": "^4.17.2",
+		"express-handlebars": "^6.0.2",
+		"mongoose": "^6.2.4",
+		"node-sass": "^7.0.1"
+	},
+	"devDependencies": {
+		"eslint": "^8.12.0",
+		"nodemon": "^2.0.15"
+	}
 }
