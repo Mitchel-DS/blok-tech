@@ -1,0 +1,19 @@
+<main class="feed">
+    <section>
+        <h2>Posts</h2>
+    </section>
+    {{#each userposts}}
+    <section class="posts">
+        <img src="/static/images/test_pf.png" alt="">
+        <div class="post">
+            <h3>{{firstname}} {{lastname}}</h3>
+            <p>{{description}}</p>
+            <p>Need help in: {{game}}</p>
+            <button><a href="/profile">Profile</a></button>
+        </div>
+    </section>
+    {{/each}}
+    <section>
+        <button><a href="/userpost">+</a></button>
+    </section>
+</main>

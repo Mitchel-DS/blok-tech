@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const error = require('../controllers/error');
+const errorController = require('../controllers/error');
 
-router.get('/', error.index);
+router.get('/', errorController.index);
 
 module.exports = router;
