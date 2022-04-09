@@ -1,5 +1,7 @@
-*, *::after, *::before {
-    box-sizing:border-box;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -10,7 +12,8 @@ $secondary-color: #5F6BE2;
 $text-light: #fff;
 $text-dark: #000;
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +27,7 @@ body {
 main.home {
     margin-top: 20px;
 
-    section{
+    section {
         color: $text-light;
         text-align: center;
         padding: 20px;
@@ -34,21 +37,29 @@ main.home {
         }
 
         button {
-            margin-top: 20px;
+            margin-top: 30px;
             border: none;
-            border-radius: 10px;
-            padding: 10px;
+            border-radius: 25px;
+            padding: 12px 24px;
+            background-color: $secondary-color;
+
+        }
+
+        button:hover {
+            background-color: #3646e3;
         }
 
         button a {
             text-decoration: none;
-            color : $text-dark;
+            color: $text-light;
         }
     }
 }
 
 main.feed {
-    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
     section {
         h2 {
             text-align: center;
@@ -73,6 +84,38 @@ main.feed {
         div.post {
             margin: 15px;
         }
+
+        button {
+            margin-top: 10px;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 24px;
+            background-color: $secondary-color;
+
+        }
+
+        button:hover {
+            background-color: #3646e3;
+        }
+
+        button a {
+            text-decoration: none;
+            color: $text-light;
+        }
+    }
+
+    button.addUserPost {
+        position: fixed;
+        margin-top: 10px;
+        border: none;
+        background-color: #3646e3;
+        border-radius: 15em;
+        padding: 3px 15px;
+        padding-top: 0.4em;
+        height: 4em;
+        right: 2em;
+        bottom: 10em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 }
 
@@ -99,20 +142,20 @@ main.error {
         transform: translateY(-50%);
 
         h3 {
-           font-size: 160px;
-           margin: 0; 
-           font-weight: 900;
-           letter-spacing: 20px;
+            font-size: 160px;
+            margin: 0;
+            font-weight: 900;
+            letter-spacing: 20px;
 
         }
-        
+
         button {
             margin-top: 30px;
             border: none;
             border-radius: 25px;
             padding: 12px 24px;
             background-color: $secondary-color;
-            transition: 0.4s;
+
         }
 
         button:hover {
@@ -121,15 +164,16 @@ main.error {
 
         button a {
             text-decoration: none;
-            color : $text-light;
+            color: $text-light;
         }
     }
 }
 
 main.profile {
+    padding-bottom: 100px;
     h2.postTitle {
-            text-align: center;
-            color: $text-light;
+        text-align: center;
+        color: $text-light;
     }
 
     section.profile {
@@ -144,7 +188,7 @@ main.profile {
             width: 40%;
         }
     }
-    
+
     section.posts {
         background-color: $background-light;
         border-radius: 10px;
@@ -161,6 +205,23 @@ main.profile {
 
         div.post {
             margin: 15px;
+        }
+
+        button {
+            margin-top: 10px;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 24px;
+            background-color: $secondary-color;
+        }
+
+        button:hover {
+            background-color: #3646e3;
+        }
+
+        button a {
+            text-decoration: none;
+            color: $text-light;
         }
     }
 }
@@ -181,7 +242,6 @@ footer {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         img {
-            transition: .2s ease;
             height: 100%;
             width: 100%;
         }

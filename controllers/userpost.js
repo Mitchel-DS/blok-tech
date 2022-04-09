@@ -12,7 +12,7 @@ const index = (req, res) => {
 const userpost = async (req, res) => {
 	const userpost = await new UserPost(req.body);
 	userpost.save();
-	res.redirect('/');
+	res.redirect('/feed');
 };
 
 module.exports = {
