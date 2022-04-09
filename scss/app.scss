@@ -127,16 +127,40 @@ main.error {
 }
 
 main.profile {
-    section {
+    h2.postTitle {
+            text-align: center;
+            color: $text-light;
+    }
+
+    section.profile {
         background-color: $background-light;
         border-radius: 10px;
         padding: 10px;
-        margin: 10px;
+        margin: 10px 10px 30px 10px;
         text-align: center;
 
         img {
             height: 40%;
             width: 40%;
+        }
+    }
+    
+    section.posts {
+        background-color: $background-light;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+
+
+        img {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+
+        div.post {
+            margin: 15px;
         }
     }
 }

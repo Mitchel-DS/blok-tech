@@ -1,7 +1,20 @@
 <main class="profile">
-    <section>
+    <section class="profile">
         <img src="/static/images/test_pf.png" alt="">
         <h2>Mitchel Staal</h2>
         <p>New to this app! Looking forward to meeting some new people.</p>
     </section>
+
+    <h2 class="postTitle">My posts</h2>
+    {{#each userposts}}
+    <section class="posts">
+        <img src="/static/images/test_pf.png" alt="">
+        <div class="post">
+            <h3>{{firstname}} {{lastname}}</h3>
+            <p>{{description}}</p>
+            <p>Need help in: {{game}}</p>
+            <button><a href="/profile">Profile</a></button>
+        </div>
+    </section>
+    {{/each}}
 </main>
