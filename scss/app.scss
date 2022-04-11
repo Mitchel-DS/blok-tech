@@ -123,6 +123,14 @@ main.feed {
 }
 
 main.userpost {
+    .errormessage {
+        display: unset !important;
+    }
+
+    .foute-input {
+        border-color: #ff6f6f !important;
+    }
+
     section {
         background-color: $background-light;
         border-radius: 10px;
@@ -140,7 +148,7 @@ main.userpost {
             label {
                 margin-left: 1em;
             }
-        
+
             input {
                 margin: 0em 0em .5em 1em;
                 width: 90%;
@@ -148,10 +156,6 @@ main.userpost {
                 padding: 1em;
             }
 
-            input.error {
-                border-color: $error-color;
-            }
-        
             input[type='submit'] {
                 border: none;
                 border-radius: 25px;
@@ -162,7 +166,7 @@ main.userpost {
                 text-decoration: none;
                 color: $text-light;
             }
-        
+
             input[type='submit']:hover {
                 background-color: #3646e3;
             }
@@ -174,13 +178,15 @@ main.userpost {
                 padding: 1em;
             }
 
-            label#error {
-                padding: 0.25em 0.5em;
+            div#error {
+                padding: 12px 24px;
                 background-color: #ff6f6f;
                 color: white;
                 font-weight: 300;
-                border-radius: 0.25em;
+                width: 90%;
+                border-radius: 25px;
                 display: none;
+                margin-left: 1em;
 
                 span {
                     font-weight: 600;
@@ -354,11 +360,3 @@ footer {
     }
 }
 
-.errorLabel {
-    display: unset !important;
-  }
-  
-  .foute-input {
-    border-color: #ff6f6f !important;
-  }
-  
