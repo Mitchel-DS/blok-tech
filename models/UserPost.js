@@ -1,11 +1,11 @@
 const mongoose  = require('mongoose');
 
 const userPostSchema = new mongoose.Schema({
-	firstname:{
+	username:{
 		type:String,
-		required:true,
+		required:true
 	},
-	lastname:{
+	email:{
 		type:String,
 		required:true,
 	},
@@ -15,7 +15,7 @@ const userPostSchema = new mongoose.Schema({
 	},
 	game:{
 		type:String,
-		required:false,
+		required:true,
 	}
 });
 
