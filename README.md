@@ -2,8 +2,8 @@
 Hallo, hier de introductie tot mijn concept voor Project: Tech.
 
 ## Live Demo :zap:
-Link naar live demo (not working yet) 
-[Hier](https://github.com/Mitchel-DS/blok-tech)
+Link naar live demo
+[Hier](https://gamerge.herokuapp.com/)
 
 ## Het Concept - GaMerge :new_moon_with_face:
 Gamerge, is een matching applicatie die gamers met elkaar merged, om vrienden te maken of gewoon samen brengt om elkaar te helpen. Gebruikers kunnen posts van andere gebruikers in zien en zelf bepalen op welke gereageerd wordt om te matchen.
